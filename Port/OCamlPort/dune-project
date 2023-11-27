@@ -1,0 +1,20 @@
+(lang dune 3.6)
+
+(name DBTutorial)
+
+(generate_opam_files true)
+
+(source
+ (github toasted-cornkernels/db_tutorial))
+
+(authors "ToastedCornkernels")
+
+(maintainers "ToastedCornkernels")
+
+(license LICENSE)
+
+(package
+ (name DBTutorial)
+ (synopsis "Port of cstacks/db_tutorial.")
+ (description "Port of cstacks/db_tutorial")
+ (depends ocaml dune utop ocamlgraph yojson))

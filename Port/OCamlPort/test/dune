@@ -1,0 +1,9 @@
+(env
+ (dev
+  (flags (:standard -g -short-paths -safe-string -strict-formats -strict-sequence -bin-annot -warn-error -A))))
+
+(test
+ (name DBTutorialTest)
+ (flags (:standard -open Core -open DBTutorialLib))
+ (libraries DBTutorialLib core ocamlgraph)
+ (preprocess (pps ppx_compare ppx_jane)))
